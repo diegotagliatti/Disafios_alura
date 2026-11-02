@@ -1,0 +1,6 @@
+{
+  "name": "Calculadora Retrô Tkinter Anos 90",
+  "description": "Calculadora retrô estilo anos 90 em Python Tkinter com as 4 operações básicas, emulador interativo e código-fonte completo para download.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
