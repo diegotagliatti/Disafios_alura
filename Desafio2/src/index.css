@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-lcd {
+    font-family: 'VT323', monospace;
+  }
+  .font-retro-mono {
+    font-family: 'Share Tech Mono', 'Fira Code', monospace;
+  }
+  .font-pixel {
+    font-family: 'Silkscreen', 'VT323', monospace;
+  }
+
+  /* Authentic Windows 95 / Tkinter 3D bevels */
+  .bevel-outset {
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #404040;
+    border-bottom: 2px solid #404040;
+    box-shadow: inset 1px 1px 0px #dfdfdf, inset -1px -1px 0px #808080;
+  }
+
+  .bevel-inset {
+    border-top: 2px solid #808080;
+    border-left: 2px solid #808080;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    box-shadow: inset 1px 1px 0px #404040, inset -1px -1px 0px #dfdfdf;
+  }
+
+  .bevel-thin-outset {
+    border-top: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #808080;
+    border-bottom: 1px solid #808080;
+  }
+
+  .bevel-thin-inset {
+    border-top: 1px solid #808080;
+    border-left: 1px solid #808080;
+    border-right: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+  }
+
+  .bevel-groove {
+    border: 2px groove #dfdfdf;
+  }
+
+  .bevel-ridge {
+    border: 2px ridge #dfdfdf;
+  }
+
+  .retro-button {
+    background-color: #c0c0c0;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    box-shadow: inset 1px 1px 0px #dfdfdf, inset -1px -1px 0px #808080;
+    user-select: none;
+    transition: none;
+  }
+
+  .retro-button:active, .retro-button-active {
+    border-top: 2px solid #000000;
+    border-left: 2px solid #000000;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    box-shadow: inset 1px 1px 0px #808080, inset -1px -1px 0px #dfdfdf;
+    padding-top: calc(0.5rem + 1px);
+    padding-left: calc(0.75rem + 1px);
+  }
+
+  /* Scanline effect for CRT mode */
+  .crt-scanlines {
+    background: linear-gradient(
+      rgba(18, 16, 16, 0) 50%, 
+      rgba(0, 0, 0, 0.25) 50%
+    );
+    background-size: 100% 4px;
+  }
+}
+
+/* Scrollbars with 90s look */
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background: #dfdfdf;
+  background-image: radial-gradient(#808080 15%, transparent 16%);
+  background-size: 4px 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c0c0c0;
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-right: 2px solid #404040;
+  border-bottom: 2px solid #404040;
+}
+
+::-webkit-scrollbar-thumb:active {
+  border-top: 2px solid #404040;
+  border-left: 2px solid #404040;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
